@@ -17,6 +17,14 @@ p {
     text-align: center;
 }
 
+.p2 {
+    color: #800020;
+    font-family: Georgia, serif; 
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
   .image {
     display: block;
     margin-left: auto;
