@@ -1,12 +1,10 @@
 h1 {
     text-align: center; 
     color: #800020;
-    margin: 64px; 
-    font-size: 25px; 
+    margin: 50px; 
+    font-size: 35px; 
     font-family: Georgia, serif;
 }
-
-
 
 p {
     color: black; 
@@ -15,6 +13,25 @@ p {
     margin-right: 30px; 
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 16px;
-
+    font-size: 18px;
+    float: right;
 }
+
+  .left {
+    display: block;
+    margin: 50px;
+    width: 40%;
+    border-radius: 10%;
+    float: left;
+    
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body {
+    background-image: url("images/old.jpg");
+   }
