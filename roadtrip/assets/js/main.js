@@ -4,6 +4,37 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+/*
+const API_KEY = "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"
+const iconName = document.querySelector("buttonName")
+const inputElement = document.querySelector("input")
+
+const getImages = async () => {
+	const options = {
+		method: "POST",
+		headers: {
+			"Authorization": 'Bearer ${API_KEY}',
+			'Content-Type': "application/json"
+		},
+		body: JSON.stringify({
+			"prompt": inputElement.value,
+			"n": 1,
+			"size": "1024x1024"
+		})
+	}
+	try {
+		const response = await fetch('https://api.openai.com/v1/images/generations', options)
+		const data = await response.json()
+		console.log(data)
+	} catch (error) {
+		console.error(error)
+	}
+}
+
+iconName.addEventListener('click', getImages)
+*/
+
+
 (function($) {
 
 	skel.breakpoints({
