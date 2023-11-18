@@ -4,10 +4,13 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
-
-const API_KEY = "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"
-const submitIcon = document.querySelector("#submit-icon")
+/*
+//const API_KEY = "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"
+const API_KEY = "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"
+//const submitIcon = document.querySelector("myButton")
 const inputElement = document.querySelector('.images-section')
+
+var button = document.getElementById("myButton")
 
 const getImages = async () => {
 	const options = {
@@ -17,7 +20,7 @@ const getImages = async () => {
 			'Content-Type': "application/json"
 		},
 		body: JSON.stringify({
-			"prompt": inputElement.value,
+			"prompt": "Cats",
 			"n": 1,
 			"size": "1024x1024"
 		})
@@ -40,7 +43,7 @@ const getImages = async () => {
 	}
 }
 
-submitIcon.addEventListener('click', getImages)
+button.addEventListener('click', getImages)
 
 
 
@@ -164,4 +167,12 @@ submitIcon.addEventListener('click', getImages)
 
 	});
 
-})(jQuery);
+})(jQuery);*/
+
+import React from 'react';
+
+class MyComponent extends React.Component {
+  render() {
+    return <div>Hello, React!</div>;
+  }
+}
