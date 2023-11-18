@@ -4,10 +4,10 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
-/*
+
 const API_KEY = "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"
-const iconName = document.querySelector("buttonName")
-const inputElement = document.querySelector("input")
+const submitIcon = document.querySelector("#submit-icon")
+const inputElement = document.querySelector('.images-section')
 
 const getImages = async () => {
 	const options = {
@@ -25,14 +25,23 @@ const getImages = async () => {
 	try {
 		const response = await fetch('https://api.openai.com/v1/images/generations', options)
 		const data = await response.json()
-		console.log(data)
+		//console.log(data)
+
+		data?.data.forEach(imageObject => {
+			const ImageContainer = document.createElement('div')
+			ImageContainer.classList.add('image-container')
+			const imageElement = document.createElement('img')
+			imageElement.setAttribute('src', imageObject.url)
+			ImageContainer.append(imageELement)
+			imageSection.append(ImageContainer)
+		})
 	} catch (error) {
 		console.error(error)
 	}
 }
 
-iconName.addEventListener('click', getImages)
-*/
+submitIcon.addEventListener('click', getImages)
+
 
 
 (function($) {
