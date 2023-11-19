@@ -43,7 +43,7 @@ const getImages = async () => {
 	}
 }
 
-button.addEventListener('click', getImages)
+button.addEventListener('click', getImages)*/
 
 
 
@@ -167,12 +167,13 @@ button.addEventListener('click', getImages)
 
 	});
 
-})(jQuery);*/
+})(jQuery);
 
+/*
 import React from 'react';
 
 class MyComponent extends React.Component {
   render() {
     return <div>Hello, React!</div>;
   }
-}
+}*/
