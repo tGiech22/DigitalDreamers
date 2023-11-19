@@ -18,11 +18,27 @@ function changeVariableOnClick(id) {
   } 
 }
 
+/*
 linkOne.addEventListener('click', function() {
-  changeVariableOnClick(1);
+  changeVariableOnClick('link-one');
 });
 
 linkTwo.addEventListener('click', function() {
   changeVariableOnClick(2);
 });
 
+linkThree.addEventListener('click', function() {
+    changeVariableOnClick('link-three');
+  });
+
+linkFour.addEventListener('click', function() {
+    changeVariableOnClick('link-four');
+  });
+
+  linkFive.addEventListener('click', function() {
+    changeVariableOnClick('link-five');
+  });
+
+  linkSix.addEventListener('click', function() {
+    changeVariableOnClick('link-six');
+  });
