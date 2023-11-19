@@ -3,7 +3,7 @@ const API_KEY = "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"
 //const submitIcon = document.querySelector("myButton")
 const inputElement = document.querySelector('.images-section')
 
-var button = document.getElementById("myButton")
+var button = document.getElementById("button1")
 
 const getImages = async () => {
 	const options = {
@@ -13,7 +13,7 @@ const getImages = async () => {
 			'Content-Type': "application/json"
 		},
 		body: JSON.stringify({
-			"prompt": "Cats",
+			"prompt": "Dark and mysterious forest",
 			"n": 1,
 			"size": "1024x1024"
 		})
@@ -21,8 +21,9 @@ const getImages = async () => {
 	try {
 		const response = await fetch('https://api.openai.com/v1/images/generations', options)
 		const data = await response.json()
-		//console.log(data)
-
+		console.log(data)
+        
+        /*
 		data?.data.forEach(imageObject => {
 			const ImageContainer = document.createElement('div')
 			ImageContainer.classList.add('image-container')
@@ -30,7 +31,7 @@ const getImages = async () => {
 			imageElement.setAttribute('src', imageObject.url)
 			ImageContainer.append(imageELement)
 			imageSection.append(ImageContainer)
-		})
+		})*/
 	} catch (error) {
 		console.error(error)
 	}
