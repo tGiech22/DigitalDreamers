@@ -5,10 +5,6 @@ let linkFour = document.getElementById("link-four"); //-2
 let linkFive = document.getElementById("link-five"); //-3
 let linkSix = document.getElementById("link-six"); //0
 
-sessionStorage.setItem("lastname", "Smith");
-let personName = sessionStorage.getItem("lastname");
-document.getElementById("demo").innerHTML = personName;
-
 let points = 0;
 
 function changeVariableOnClick(id) {
@@ -25,7 +21,6 @@ function changeVariableOnClick(id) {
   } else if (id === 'link-six') {
     points = points - 0;
   }
-  alert(points); //test
 }
 
 linkOne.addEventListener('click', function() {
