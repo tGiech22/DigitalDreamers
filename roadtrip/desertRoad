@@ -1,0 +1,18 @@
+<head> 
+    <title> Your journey begins now!! </title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body> 
+    <h1> You're all alone with nothing in sight... </h1>
+        <p> You end up roaming what seems like a deserted road with nothing but your own self-- no source of light, no safety device, 
+            not even a sense of direction. So far, you've kept calm and plan on continuing to do so. Taking small steps at a time, you
+            make your way forward. All you hear are your footsteps below you... or so you thought. 
+            From the distance, you hear eary cackling and you freeze. The laughter approaches you and you see a short but mighty looking 
+            witch with an evil smirk coming your way. Your two choices are to <b> interact with the witch </b> or <b> ignore and walk 
+            around her, pretending you never even noticed her. </b> What do you do? </p>
+            <div class = "container">
+                <button class="button button1"> Interact with the witch </button>
+                <button class="button button1"> Ignore and walk around </button>
+            </div>
+</body>
