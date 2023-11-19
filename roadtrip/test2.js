@@ -1,5 +1,5 @@
 //const API_KEY = "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"
-const API_KEY = "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"
+const API_KEY = "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"
 //const submitIcon = document.querySelector("myButton")
 const inputElement = document.querySelector('input')
 const imageSection = document.querySelector('.images-section')
