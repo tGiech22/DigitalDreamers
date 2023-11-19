@@ -10,6 +10,9 @@ let points = 0;
 function changeVariableOnClick(id) {
   if (id === 'link-one') {
     points = points + 1;
+
+    localStorage.setItem('points', points + 1);
+    console.log("in function changeVar")
   } else if (id === 'link-two') {
     points = points - 1;
   } else if (id === 'link-three') {
@@ -23,9 +26,13 @@ function changeVariableOnClick(id) {
   }
 }
 
+/*
 linkOne.addEventListener('click', function() {
   changeVariableOnClick('link-one');
-});
+  console.log("in eventlistenr")
+});*/
+
+linkOne.addEventListener('click', console.log("test"))
 
 linkTwo.addEventListener('click', function() {
   changeVariableOnClick('link-two');
@@ -46,3 +53,17 @@ linkFour.addEventListener('click', function() {
   linkSix.addEventListener('click', function() {
     changeVariableOnClick('link-six');
   });
+
+  
+  function first() {
+    localStorage.setItem('points', 1);
+  }
+
+  function second() {
+    myValue = null;
+    if (localStorage.getItem('points')) {
+      myValue = localStorage.getItem('points');
+    }
+
+    console.log(myValue);
+  }
