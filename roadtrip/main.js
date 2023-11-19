@@ -1,41 +1,30 @@
-let linkOne = document.getElementById("link-one"); //+1
-let linkTwo = document.getElementById("link-two"); //-1
-let linkThree = document.getElementById("link-three"); //+2
-let linkFour = document.getElementById("link-four"); //-2
-let linkFive = document.getElementById("link-five"); //-3
-let linkSix = document.getElementById("link-six"); //0
-
-let points = 0;
+let linkOne = document.getElementById("link-one"); 
+let linkTwo = document.getElementById("link-two"); 
 
 function changeVariableOnClick(id) {
-  if (id === 'link-one') {
-    points = points + 1;
-
-    localStorage.setItem('points', points + 1);
-    console.log("in function changeVar")
-  } else if (id === 'link-two') {
-    points = points - 1;
-  } else if (id === 'link-three') {
-    points = points + 2;
-  } else if (id === 'link-four') {
-    points = points - 2;
-  } else if (id === 'link-five') {
-    points = points - 3;
-  } else if (id === 'link-six') {
-    points = points - 0;
-  }
+  var rand = Math.random();
+  if (id === 1) {
+    if (rand <= .7) {
+      window.location.href = 'win.html';
+    } else {
+      window.location.href = 'lose.html';
+    }
+  } else if (id === 2) {
+    if (rand <= .4) {
+      window.location.href = 'win.html';
+    } else {
+      window.location.href = 'lose.html';
+    }
+  } 
 }
 
 /*
 linkOne.addEventListener('click', function() {
   changeVariableOnClick('link-one');
-  console.log("in eventlistenr")
-});*/
-
-linkOne.addEventListener('click', console.log("test"))
+});
 
 linkTwo.addEventListener('click', function() {
-  changeVariableOnClick('link-two');
+  changeVariableOnClick(2);
 });
 
 linkThree.addEventListener('click', function() {
@@ -53,17 +42,3 @@ linkFour.addEventListener('click', function() {
   linkSix.addEventListener('click', function() {
     changeVariableOnClick('link-six');
   });
-
-  
-  function first() {
-    localStorage.setItem('points', 1);
-  }
-
-  function second() {
-    myValue = null;
-    if (localStorage.getItem('points')) {
-      myValue = localStorage.getItem('points');
-    }
-
-    console.log(myValue);
-  }
